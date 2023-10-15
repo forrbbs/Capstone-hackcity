@@ -652,3 +652,126 @@ footer .footer-text{
     font-size: 15px;
     font-weight: 500;
 }
+
+ /* SINGLE PRODUCT PAGE */
+ #prodetails{
+    display: flex;
+    margin-top: 40px;
+ }
+ .image-wrapper{
+    width: 30%;
+ }
+ .single-pro-img{
+    background-color: #eee;
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-align: center;
+    height: 300px;
+    cursor: pointer;
+ }
+ #mainImg{
+    width: 300px;
+ }
+ .small-img-group{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    margin-left: 50px;
+ }
+ .small-img-group .small-img-col{
+    background-color: #eee;
+    height: 80px;
+    width: 70px;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+ }
+ .small-img-group .small-img-col img{
+    width: 70px;
+    height: 80px;
+ }
+ .single-pro-details{
+    width: 40%;
+    margin-left: 60px;
+ }
+ .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+ }
+ .single-pro-details input{
+    width: 35px;
+    height: 29px;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    outline: none;
+ } 
+ .single-pro-details button{
+    height: 2.1rem;
+    width: 20%;
+    font-size: 10px;
+    padding: 0 0.5rem;
+    border: 1px solid transparent;
+    background-color: #F5683B;
+    color: #fff;
+    border-radius: 4px;
+ }
+ .single-pro-details span{
+    font-size: 13px;
+ }
+
+ @media(max-width:799px){
+    .image-wrapper{
+        width: 40%;
+     }
+     .single-pro-img{
+        width: 100%;
+        margin-left: 30px;
+     }
+ .small-img-group{
+    margin-left: 30px;
+ }
+.single-pro-details{
+    width: 40%;
+}
+.single-pro-details button{
+    width: 30%;
+}
+
+ }
+
+ @media(max-width:500px){
+    #prodetails{
+        flex-direction: column;
+    }
+    .image-wrapper{
+        width: 90%;
+     }
+     .single-pro-img{
+        width: 80%;
+        margin-left: 60px;
+     }
+     .single-pro-details{
+        width: 70%;
+    }
+     .single-pro-details button{
+        width: 40%;
+    }
+    .small-img-group{
+        margin-left: 60px;
+     }
+ }
+ @media (max-width:330px){
+    .image-wrapper{
+        width: 90%;
+     }
+     #mainImg{
+        width: 220px;
+     }
+     .single-pro-img{
+        height: 250px;
+     }
+ }

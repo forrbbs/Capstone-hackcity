@@ -29,13 +29,107 @@
         </div>
     </section>
 
-    <section id="pro-details">
+    <section id="prodetails">
+        <div class="image-wrapper">
         <div class="single-pro-img">
-            <img src="img/P1.png" width="100%" id="mainImg" alt="">
+            <img src="img/P1.png"  id="mainImg" alt="">
+        </div>
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="" alt="">
+                    <img src="img/P1.png" class="small-img" alt="">
                 </div>
+                <div class="small-img-col">
+                    <img src="img/p1p1.png" class="small-img" alt="">
+                </div>
+        </div>
+      </div>
+        <div class="single-pro-details">
+            <h6>Home / T-shirt</h6>
+            <h4>Men's Fashion T shirt</h4>
+            <h2>$50.00</h2>
+            <select>
+                <option value="">select size</option>
+                <option value="">small</option>
+                <option value="">Medium</option>
+                <option value="">Large</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add To Cart</button> 
+            <h4>Product details</h4>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid delectus omnis architecto, officiis velit ratione neque nulla perferendis labore cum ullam explicabo consequatur similique cupiditate quos nostrum iusto unde nam.</span>
+        </div>
+    </section>
+
+
+    <section id="products" class="section-p">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
+            <div class="pro-card">
+                <img src="img/p5.png" alt="">
+                <div class="pro-description">
+                    <span>unknown brand</span>
+                    <h5>Cargo Pants</h5>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4>$45</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro-card">
+                <img src="img/p6.png" alt="">
+                <div class="pro-description">
+                    <span>unknown brand</span>
+                    <h5>Womens Long Gown</h5>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4>$20</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro-card">
+                <img src="img/p7.png" alt="">
+                <div class="pro-description">
+                    <span>unknown brand</span>
+                    <h5>Fitted Corporate Gown</h5>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4>$42</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro-card">
+                <img src="img/p8.png" alt="">
+                <div class="pro-description">
+                    <span>unknown brand</span>
+                    <h5>Floral Sleeves</h5>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h4>$64</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
             </div>
         </div>
     </section>
@@ -102,7 +196,23 @@
     </div>
     <p class="footer-text"> &copy 2023, Made By Aliyu Mukhtar</p>
     </footer>
+    <script>
+        const mainImg = document.getElementById('mainImg')
+        const smallImg = document.getElementsByClassName('small-img')
 
+
+        smallImg[0].onclick = function(){
+            mainImg.src =smallImg[0].src;
+
+        }
+        smallImg[1].onclick = function(){
+            mainImg.src =smallImg[1].src;
+            console.log("clicked")
+            
+        }
+    </script>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
