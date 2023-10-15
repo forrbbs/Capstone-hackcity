@@ -612,3 +612,40 @@ footer .footer-text{
         font-size: 11px;
     }
 }
+
+
+
+/* SHOP PAGE*/
+
+#page-header{
+    width: 100%;
+    height: 40vh;
+    margin-top: -20px;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://images.unsplash.com/photo-1609189184127-04652523de91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#page-header h2{
+    font-size: 40px;
+    color:#fff;
+}
+#page-header p{
+    margin-top:-10px;
+    color: #fff;
+}
+
+#page-cont{
+    text-align: center;
+    margin-top: 30px;
+}
+#page-cont a{
+    text-decoration: none;
+    background-color: #F5683B;
+    padding: 8px;
+    color: #fff;
+    font-weight: 500;
+}
