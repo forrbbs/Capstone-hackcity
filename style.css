@@ -360,7 +360,7 @@ button.normal{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top:100px;
+    margin-top:70px;
     padding: 25px;
 }
 .banner-box h4,.banner-box2 h4{
@@ -397,7 +397,7 @@ button.normal{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top:100px;
+    margin-top:70px;
     padding: 25px;
 }
 
@@ -546,22 +546,34 @@ footer .footer-text{
         font-size: 12px;
         width: 80px;
     }
-
+    .pro-container{
+        justify-content: center;
+    }
+    .pro-card{
+        margin:0 5px;
+    }
 
 }
 
 @media(max-width:500px){
+    .hero{
+        height: 60vh;
+    }
     .hero-text{
         position: absolute;
     }
     .hero-banner {
-      margin-right: 10%;    
+      margin-right: 10%; 
+ 
     }
     .hero-banner img{
         width: 200px;
     }
     .hero-mini-banner{
         visibility: hidden;
+    }
+    .ft-container{
+        justify-content: center;
     }
     #sm-banner .banner-box{
         min-width: 70%;
