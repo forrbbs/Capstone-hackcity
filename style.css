@@ -645,7 +645,10 @@ footer .footer-text{
 #page-cont a{
     text-decoration: none;
     background-color: #F5683B;
-    padding: 8px;
+    padding:8px 10px;
     color: #fff;
+}
+#page-cont a i{
+    font-size: 15px;
     font-weight: 500;
 }
