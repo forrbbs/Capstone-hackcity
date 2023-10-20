@@ -18,8 +18,8 @@
                 <li><a  href="main.html">Home</a></li>
                 <li><a  href="shop.html">Shop</a></li>
                 <li><a  href="blog.html">Blog</a></li>
-                <li><a  class="active" href="contact.html">Contact Us</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a  href="contact.html">Contact Us</a></li>
+                <li id="lg-bag"><a  class="active"  href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
                 <i id="close" class="fa fa-times"></i>
             </ul>
         </nav>
@@ -34,75 +34,61 @@
         <p>LEAVE A MESSAGE, We love to hear from you!</p>
     </section>
 
-    <section id="contact-details">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Visit one of our agency locations or contact us today</h2>
-            <h3>Head Office</h3>
-            <div>
-                <li>
-                    <i class="fa fa-map"></i>
-                    <p>12000 Fairhill Rd Cleveland, OH 44120-1035</p>
-                </li>
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <p>contact@example.com</p>
-                </li>
-                <li>
-                    <i class="fa fa-phone"></i>
-                    <p>09016333385</p>
-                </li>
-                <li>
-                    <i class="fa fa-clock-o"></i>
-                    <p>Monday to Saturday: 9.00am to 16.pm</p>
-                </li>
-            </div>
-        </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.578864568037!2d-81.59403462340167!3d41.49172898951567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fc880aa77731%3A0x61420cbbfcf447f9!2sFairhill%20Rd%2C%20Cleveland%2C%20OH%2C%20USA!5e0!3m2!1sen!2sng!4v1697501536934!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <section id="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quality</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-times-circle"></i></td>
+                    <td><img src="/img/P1.png" alt=""></td>
+                    <td>Mens Vintage Shirt</td>
+                    <td>$59.00</td> 
+                    <td><input type="number" value="1"></td>
+                    <td>$59.00</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="form-details">
-        <form action="" method="post">
-            <span>LEAVE A MESSAGE</span>
-            <h2>We love to hear from you</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <div class="people">
+    <section id="add-cart">
+        <div id="coupon">
+            <h3>Apply coupon</h3>
             <div>
-                <img src="/img/user2.jpg" alt="">
-                <p><span>Larry North</span>Senior Marketing Manager <br> Phone: 09000300342 <br> Email: contact@example.com</p>
+                <input type="text" placeholder="Coupon code">
+                <button>Apply</button>
             </div>
-            <div>
-                <img src="/img/user1.jpg" alt="">
-                <p><span>Jessica Monroe</span>Senior Marketing Manager <br> Phone: 09000300342 <br> Email: contact@example.com</p>
-            </div>
-            <div>
-                <img src="/img/user2.jpg" alt="">
-                <p><span>Josh Hart</span>Senior Marketing Manager <br> Phone: 09000300342 <br> Email: contact@example.com</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="newsletter">
-        <div class="newstext">
-            <h4>Sign up for news letter</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span>
-            </p>
-        </div>
-        <div class="newsform">
-            <input type="text" placeholder="Enter email">
-            <button>Sign Up</button>
         </div>
 
+        <div id="Subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart subtotal</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>#35</strong></td>
+                </tr>
+            </table>
+            <button>Procced to checkout</button>
+        </div>
 
     </section>
-
+    
     <footer>
         <div class="footer">
         <div class="footer-col">

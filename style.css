@@ -1048,3 +1048,129 @@ footer .footer-text{
         width: 35%;
     }
 }
+
+
+
+/* CART PAGE */
+#cart{
+    overflow-x: auto;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    margin-top: 40px;
+}
+#cart table img{
+    width: 60px;
+    background-color: #eee;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 50px;
+    padding: 8px 4px 8px 12px;
+}
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 14px 0 ;
+}
+#cart table tbody tr td{
+    padding-top: 10px;
+}
+#cart table tbody td{
+    font-size: 12px;
+}
+
+#add-cart{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 25px;
+
+}
+#coupon input{
+    padding: 8px 17px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button{
+    height: 2.1rem;
+    font-size: 14px;
+    padding: 8px 8px;
+    border: 1px solid transparent;
+    background-color: #F5683B;
+    color: #fff;
+    border-radius: 4px;
+}
+#Subtotal{
+    width: 40%;
+    margin-bottom: 25px;
+    border: 1px solid #e2e9e1;
+    padding: 25px;
+}
+#Subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#Subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+#Subtotal button{
+    height: 2.1rem;
+    font-size: 14px;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    background-color: #F5683B;
+    color: #fff;
+    border-radius: 4px;
+}
+
+@media(max-width:500px){
+    #cart-add{
+        flex-direction: column;
+    }
+    #coupon{
+        width: 100%;
+    }
+    #Subtotal{
+        width: 100%;
+    }
+}
